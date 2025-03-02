@@ -1,6 +1,6 @@
 # Resume Website Deployment on AWS
 
-This project demonstrates how to deploy a static resume website using **AWS services**, including **Amazon S3**, **CloudFront**, **Route 53**, **AWS Lambda**, **DynamoDB** and **API Gateway** with a focus on security, performance, and automation. The deployment process is fully automated using **GitHub Actions**, ensuring seamless updates with every code push.
+This project demonstrates how to deploy a static resume website using **AWS services**, including **Amazon S3**, **CloudFront**, **Route 53**, **AWS Lambda**, **DynamoDB**, and **API Gateway** with a focus on security, performance, and automation. The deployment process is fully automated using **GitHub Actions**, ensuring seamless updates with every code push.
 
 ---
 
@@ -22,32 +22,36 @@ This project demonstrates how to deploy a static resume website using **AWS serv
   - **HTML**: For content structure.
   - **CSS**: For styling and layout.
   - **JavaScript**: For interactivity.
-
-- Organized the project files into:
-  img/icons/ # Social media icons img/ # Images for the website index.html # Main HTML file /js # JavaScript files for interactions styles.css/ # Stylesheet files
+  - Organized the project files into:
+    - `img/icons/`: Social media icons
+    - `img/`: Images for the website
+    - `index.html`: Main HTML file
+    - `js/`: JavaScript files for interactions
+    - `css/`: Stylesheet files
 
 ---
 
 ### 2. **Amazon S3: Hosting the Static Website**
 
 - **Created an S3 bucket**:
-- Bucket Name: `vivek-resume-bucket`.
-- Enabled **Static Website Hosting** in S3.
-- Uploaded all website files (HTML, CSS, JS, images) to the bucket.
+
+  - Bucket Name: `vivek-resume-bucket`.
+  - Enabled **Static Website Hosting** in S3.
+  - Uploaded all website files (HTML, CSS, JS, images) to the bucket.
 
 - **Configured Bucket Permissions**:
-- Ensured the bucket is private and accessible only via **CloudFront**.
-- Used **IAM policies** and **Origin Access Identity (OAI)** for secure access.
+  - Ensured the bucket is private and accessible only via **CloudFront**.
+  - Used **IAM policies** and **Origin Access Identity (OAI)** for secure access.
 
 ---
 
 ### 3. **AWS CloudFront: Securing and Accelerating Content Delivery**
 
 - **Created a CloudFront Distribution**:
-- Configured the S3 bucket as the origin.
-- Set up **Alternate Domain Names (CNAMEs)** for `viveksati.online` and `www.viveksati.online`.
-- Used **AWS Certificate Manager (ACM)** to issue an SSL certificate for HTTPS.
-- Configured **Caching** to improve performance and reduce load on the S3 bucket.
+  - Configured the S3 bucket as the origin.
+  - Set up **Alternate Domain Names (CNAMEs)** for `viveksati.online` and `www.viveksati.online`.
+  - Used **AWS Certificate Manager (ACM)** to issue an SSL certificate for HTTPS.
+  - Configured **Caching** to improve performance and reduce load on the S3 bucket.
 
 ---
 
@@ -61,9 +65,9 @@ This project demonstrates how to deploy a static resume website using **AWS serv
 ### 5. **Amazon Route 53: Domain Configuration**
 
 - **Created a Hosted Zone**:
-- Added DNS records to Route 53:
 
-  - **A (Alias) Record**: Pointed `resume.viveksati.online` to the CloudFront distribution.
+  - Added DNS records to Route 53:
+    - **A (Alias) Record**: Pointed `resume.viveksati.online` to the CloudFront distribution.
 
 - Validated DNS propagation and verified the domain's accessibility.
 
@@ -72,12 +76,15 @@ This project demonstrates how to deploy a static resume website using **AWS serv
 ### 6. **GitHub Actions: Automating Deployment**
 
 - **Set up a GitHub Repository**:
-- Added all website files (`index.html`, `styles.css`, `script.js`, etc.).
+
+  - Added all website files (`index.html`, `styles.css`, `script.js`, etc.).
 
 - **Configured a Workflow**:
-- Created `.github/workflows/deploy.yml` to automate the following tasks:
-  1. Sync updated files to the S3 bucket.
-  2. Invalidate CloudFront cache for immediate updates.
+
+  - Created `.github/workflows/deploy.yml` to automate the following tasks:
+    1. Sync updated files to the S3 bucket.
+    2. Invalidate CloudFront cache for immediate updates.
+
 - Sample GitHub Actions Workflow:
 
   ```yaml
@@ -115,31 +122,50 @@ This project demonstrates how to deploy a static resume website using **AWS serv
 ### 7. **Testing and Validation**
 
 - **Tested the website**:
-- Accessed the website via `https://viveksati.online`.
-- Verified global availability and HTTPS functionality.
+
+  - Accessed the website via `https://viveksati.online`.
+  - Verified global availability and HTTPS functionality.
 
 - **Validated Automation**:
-- Pushed updates to the GitHub repository and confirmed automatic deployment via GitHub Actions.
+  - Pushed updates to the GitHub repository and confirmed automatic deployment via GitHub Actions.
+
+---
+
+### 8. **Visitor Count Tracking**
+
+- **Set up AWS Lambda**:
+
+  - Created a Lambda function to handle visitor count logic.
+  - Configured the function to be triggered by API Gateway.
+
+- **Configured DynamoDB**:
+
+  - Created a DynamoDB table to store visitor count data.
+  - Defined the necessary read/write permissions for the Lambda function.
+
+- **API Gateway Integration**:
+  - Set up an API Gateway to expose an endpoint for the Lambda function.
+  - Configured the endpoint to trigger the Lambda function and update the visitor count.
 
 ---
 
 ## Tools and Technologies
 
 - **AWS Services**:
-- S3: Static file hosting.
-- CloudFront: Content delivery network (CDN).
-- Route 53: DNS management.
-- Lambda :
-- API Gateway :
-- DynamoDB :
-- ACM: SSL/TLS certificate.
+  - S3: Static file hosting.
+  - CloudFront: Content delivery network (CDN).
+  - Route 53: DNS management.
+  - Lambda: Serverless compute service.
+  - API Gateway: API management.
+  - DynamoDB: NoSQL database.
+  - ACM: SSL/TLS certificate.
 - **CI/CD**:
-- GitHub Actions for automated deployment.
+  - GitHub Actions for automated deployment.
 - **Web Development**:
-- HTML, CSS, JavaScript.
+  - HTML, CSS, JavaScript.
 - **Security**:
-- IAM roles and policies.
-- GitHub Secrets for AWS credential management.
+  - IAM roles and policies.
+  - GitHub Secrets for AWS credential management.
 
 ---
 
