@@ -14,6 +14,8 @@
   <link href="css/aos.css" rel="stylesheet" />
   <!-- main style -->
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/dark-mode.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <!-- vercel-insights -->
   <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9508063888104450"
@@ -55,6 +57,9 @@
         <li><a href="#projects">Projects</a></li>
         <!-- <li><a href="#education">Education</a></li> -->
         <li><a href="#contact">Contact</a></li>
+        <li style="margin-left:auto;">
+          <i id="dark-mode-switch" class="fas fa-moon dark-mode-icon"></i>
+        </li>
       </ul>
     </nav>
   </header>
@@ -80,8 +85,8 @@
           </div>
         </div>
         <div id="profilediv">
-          <img src="img/portrait.png" width="361" class="img-responsive" id="profilepic" alt="" align="right"
-            data-aos="fade-right" data-aos-delay="0" />
+          <img src="img/portrait.png" width="361" class="img-responsive" id="profilepic" alt="Profile Picture"
+            align="right" data-aos="fade-right" data-aos-delay="0" />
         </div>
       </div>
     </div>
@@ -93,9 +98,7 @@
     <div class="container" id="skill-container">
       <div class="col-md-12">
         <h4>01</h4>
-        <h1 class="size-50">
-          My Skills
-        </h1>
+        <h1 class="size-50">My Skills</h1>
         <div class="h-50"></div>
       </div>
       <section class="Skills">
@@ -249,392 +252,293 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="datasci">
-                      <h2>Cloud Services & OS</h2>
-                      <div class="box">
-                          <div class="datasciSkill">
-                              <img src="/img/icons/linux-platform.png" alt="">
-                              Linux  
-                          </div>
-                          <div class="datasciSkill">
-                              <img src="/img/icons/linux-platform.png" alt="">
-                              Linux  
-                          </div>
-                          <div class="datasciSkill">
-                              <img src="/img/icons/azure.png" alt="">
-                              Microsoft Azure 
-                          </div>
-                      </div>
-                  </div> -->
           </div>
         </div>
       </section>
-
     </div>
-    <!-- ./skill -->
+  </div>
+  <!-- ./skill -->
 
-    <!-- about -->
-
-    <!-- ./about -->
-
-    <!-- experience  -->
-    <div class="section" id="experience">
-      <div class="container">
-        <div class="col-md-12">
-          <h4>02</h4>
-          <h1 class="size-50">
-            My
-            Experience
-          </h1>
-          <div class="h-50"></div>
-        </div>
-        <div class="col-md-12">
-          <ul class="timeline">
-            <li class="timeline-event" data-aos="fade-up">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"> Sept. 2024 - Present </p>
-                <h3>Cloud Engineer</h3>
-                <h4>Digital Hub Solution Pvt. Ltd.</h4>
-                <p>
-                  • Manage and maintain <strong>AWS</strong>, Linux & Windows-based servers, ensuring seamless operation
-                  & administrating cloud infrastructure on AWS and VMware-based platform.
-                  <br>
-                  • Set up an automated backup integrated with <strong> AWS S3 </strong> using the software Iperius,
-                  which automates daily backups and retains data according to the specified retention settings <br>
-                </p>
-
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail">
-                  July 2024 - Aug 2024
-                </p>
-                <h3>AWS Intern</h3>
-                <h4> Coding Ninjas </h4>
-                <p>
-                  • Optimized cloud infrastructure by automating deployments on AWS using tools like Beanstalk,
-                  CloudFormation & improving resource utilization. <br>
-                  • Enhanced system reliability through continuous integration (CI) and automated testing pipelines,
-                  reduced deployment errors by 87%.
-                </p>
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"> Jul 2023 - Dec 2023 </p>
-                <h3> AWS DevOps Engineer </h3>
-                <h4>Incloudo</h4>
-                <p>
-                  • Collaborated with cross-functional teams to automate processes and streamline workflows by using
-                  CI/CD tools like Jenkins, GitHub, Docker, K8s. <br>
-                  • Implemented security enhancements for client's websites operating on Linux utilizing CLI, resulting
-                  in an 82% increase in security posture. <br>
-                  • Designed and implemented cloud solutions on AWS, leveraging services such as EC2, VPC, S3, ELB, EBS,
-                  Cloudfront and WAF to optimize costs by 37%
-                </p>
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"> Aug 2023 - Sep 2023 </p>
-                <h3> CNCF Zero To Merge Mentee </h3>
-                <h4> Cloud Native Computing Foundation (CNCF) </h4>
-                <p>
-                  • Communicated effectively with CNCF project maintainers to identify and address existing problems
-                  <br>
-                  • Collaborated on open GitHub issues and created impactful pull requests directly under Mr. Taylor
-                  Dolezal (Head of ecosystem, CNCF) <br>
-                  • Engaged as a CNCF Mentee in the first cohort program, contributing to the growth and development of
-                  the Cloud Native Computing Foundation
-                </p>
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"> Jul 2023 - Aug 2023 </p>
-                <h3> IIRS-ISRO Trainee'23 </h3>
-                <h4> Indian Institute of Remote Sensing (IIRS), Indian Space Research Organization (ISRO) </h4>
-                <p>
-                  • Conducted research and analysis on Earth and Near-Earth Space phenomena to support space mission
-                  design and observations <br>
-                  • Collaborated with teams to develop space instrumentation for technological advancements in accessing
-                  space <br>
-                  • Contributed to projects in Solar System Exploration, Astronomy, Astrophysics, and Cosmology to
-                  broaden knowledge and skills.
-                </p>
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"> May 2023 - Aug 2023 </p>
-                <h3> Top 100 Contributor </h3>
-                <h4> GirlScript Summer of Code </h4>
-                <p>
-                  • Ranked <strong>𝟔𝟗</strong> among the 1557 active contributors <br>
-                  • <strong>𝟒𝟓</strong> prs got successfully merged <br>
-                  • Communicated, connected & collaborated efficiently with like-minded individuals throughout the event
-                  within and outside the community <br>
-                  • Contributed to various open source projects and organizations in GitHub based on Python, machine
-                  learning, web development and others
-                </p>
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"> Feb 2023 - Mar 2023 </p>
-                <h3> Top 20 Contributor </h3>
-                <h4> JGEC Winter of Code </h4>
-                <p>
-                  • Secured <strong>𝟐𝟎th</strong> position out of 1500+ registered participants <br>
-                  • Got started with open source with this as my first open-source program <br>
-                  • Connected & communicated efficiently with a lot of mentees and mentors from different places within
-                  the community <br>
-                  • Contributed to various open-source projects and organizations in GitHub based on Python, machine
-                  learning, web development and others
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+  <!-- experience -->
+  <div class="section" id="experience">
+    <div class="container">
+      <div class="col-md-12">
+        <h4>02</h4>
+        <h1 class="size-50">My Experience</h1>
+        <div class="h-50"></div>
       </div>
-    </div>
-    <!-- ./experience -->
-
-    <!-- projects -->
-    <div class="section" id="projects">
-      <div class="container">
-        <div class="col-md-12">
-          <h4>03</h4>
-          <h1 class="size-50">
-            My Projects
-          </h1>
-        </div>
-        <!-- main container -->
-        <div class="main-container portfolio-inner clearfix">
-          <!-- portfolio div -->
-          <div class="portfolio-div">
-            <div class="portfolio">
-              <!-- portfolio_filter -->
-              <div class="categories-grid wow fadeInLeft">
-                <nav class="categories">
-                  <ul class="portfolio_filter">
-                    <li><a href="" class="active" data-filter="*">All</a></li>
-                    <li>
-                      <a href="" data-filter=".web-Dev">AWS DevOps</a>
-                    </li>
-                    <li><a href="" data-filter=".Ml">ML</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- portfolio_filter -->
-
-              <!-- portfolio_container -->
-              <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
-                <!-- single work -->
-                <div class="col-md-4 col-sm-6 web-Dev">
-                  <a id="demo01" href="resume.viveksati.online" target="_blank" class="portfolio_item">
-                    <img src="img/portfolio/resume-ss.png" alt="image" class="img-responsive" />
-                    <div class="portfolio_item_hover">
-                      <div class="portfolio-border clearfix">
-                        <div class="item_info">
-                          <span>Cloud Resume Challenge</span>
-                          <em>AWS | GitHub Actions | Web Dev | DNS</em>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <p>
-                    • Deployed resume on AWS S3 and distributed on Cloudfront with a custom domain with SSL Certificate
-                    for HTTPS <br>
-                    • Integrated a serverless visitor counter using AWS Lambda, API Gateway and DynamoDB <br>
-                    • Set up CI/CD pipeline using GitHub Actions for continuous updates
-                  </p>
-                </div>
-                <!-- end single work -->
-
-
-                <!-- single work -->
-                <div class="col-md-4 col-sm-6 Ml">
-                  <a id="demo02" href="https://github.com/Viveksati5143/Sentimental-Analysis" target="_blank"
-                    class="portfolio_item">
-                    <img src="img/portfolio/sentiments.png" alt="image" class="img-responsive" />
-                    <div class="portfolio_item_hover">
-                      <div class="portfolio-border clearfix">
-                        <div class="item_info">
-                          <span> Sentimental Analysis </span>
-                          <em> Python | ML | NLP | Jupyter-Notebook </em>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <p>
-                    • Developed an ML project for recognizing sentiments using Logistic Regression with 93% accuracy
-                    <br>
-                    • Utilized Python libraries used such as NumPy, Pandas, scikit-learn, matplotlib and NLTK
-                  </p>
-                </div>
-                <!-- end single work -->
-
-                <!-- single work -->
-                <div class="col-md-4 col-sm-6 web-Dev">
-                  <a id="demo03" href="https://github.com/Viveksati5143/Jenkins" target="_blank" class="portfolio_item">
-                    <img src="img/portfolio/pipeline.png" alt="image" class="img-responsive" />
-                    <div class="portfolio_item_hover">
-                      <div class="portfolio-border clearfix">
-                        <div class="item_info">
-                          <span>Pipeline as a Code</span>
-                          <em>Jenkins | Tomcat | Slack | Yaml </em>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <p>
-                    • Created a Jenkins pipeline to automate the deployment of a Java web application on Tomcat server
-                    <br>
-                    • Integrated Slack notifications for build status and failure alerts <br>
-                    • Configured the pipeline using Jenkinsfile and Yaml
-                  </p>
-                </div>
-                <!-- end single work -->
-              </div>
-              <!-- end portfolio_container -->
-            </div>
-            <!-- portfolio -->
-          </div>
-          <!-- end portfolio div -->
-        </div>
-        <!-- end main container -->
-      </div>
-    </div>
-    <!-- ./projects -->
-
-    <!-- education -->
-    <!-- <div class="section" id="education">
-      <div class="container">
-        <div class="col-md-12">
-          <h4>03</h4>
-          <h1 class="size-50">
-            My
-            Education
-          </h1>
-          <div class="h-50"></div>
-        </div>
-        <div class="col-md-12">
-          <ul class="timeline">
-            <li class="timeline-event" data-aos="fade-up">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail"></p>
-                <h3></h3>
-                <h4>B.Tech CSE </h4>
-                <p>
-                  <strong>CGPA:</strong> <br>
-                </p>
-
-              </div>
-            </li>
-            <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-              <label class="timeline-event-icon"></label>
-              <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail">
-                  
-                </p>
-                <h3></h3>
-                <h4>Higher Secondary School Certificate</h4>
-                <p>
-                </p>
-              </div>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-    <!-- ./education -->
-
-
-    <!-- contact -->
-    <div class="section" id="contact">
-      <div class="container">
-        <div class="col-md-12">
-          <h4>04</h4>
-          <h1 class="size-50">Contact Me</h1>
-          <div class="h-50"></div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up">
-          <h3>Email</h3>
-          <a href="mailto:viveksati001@gmail.com">viveksati001@gmail.com</a>
-
-          <h3>Social Network</h3>
-
-          <ul class="social">
-
-            <li>
-              <a href="https://www.linkedin.com/in/vivek-sati/" target="_blank"><i class="ion-social-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="https://x.com/Vivek__twts" target="_blank"><i class="ion-social-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/Viveksati5143" target="_blank"><i class="ion-social-github"
-                  id="github-icon-footer"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/_the_pahadi_soul_/" target="_blank"><i
-                  class="ion-social-instagram"></i></a>
-            </li>
-
-            <br><br>
-            <h3> All My Links : </h3>
-            <ul class="social">
-              <li>
-                <a href="https://linktr.ee/Viveksati" target="_blank">Linktree<i class="ion-link"></i></a>
-              </li>
-
-            </ul>
-            <div class="clearfix"></div>
-            <div class="h-50"></div>
-        </div>
-
-
-        <div class="col-md-8" data-aos="fade-up">
-          <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" />
-            <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
-            <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
-            <textarea name="message" class="form-control" placeholder="Your Message" style="height: 120px"></textarea>
-            <button id="submit" type="submit" name="submit" class="btn btn-glance">
-              Send
-            </button>
-            <div id="success">
-              <p class="green textcenter">
-                Your message was sent successfully! I will be in touch as soon
-                as I can.
-              </p>
-            </div>
-            <div id="error">
+      <div class="col-md-12">
+        <ul class="timeline">
+          <li class="timeline-event" data-aos="fade-up">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail"> Sept. 2024 - Present </p>
+              <h3>Cloud Engineer</h3>
+              <h4>Digital Hub Solution Pvt. Ltd.</h4>
               <p>
-                Something went wrong, try refreshing and submitting the form
-                again.
+                • Manage and maintain <strong>AWS</strong>, Linux & Windows-based servers, ensuring seamless operation
+                & administrating cloud infrastructure on AWS and VMware-based platform.
+                <br>
+                • Set up an automated backup integrated with <strong> AWS S3 </strong> using the software Iperius,
+                which automates daily backups and retains data according to the specified retention settings <br>
+              </p>
+
+            </div>
+          </li>
+          <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail">
+                July 2024 - Aug 2024
+              </p>
+              <h3>AWS Intern</h3>
+              <h4> Coding Ninjas </h4>
+              <p>
+                • Optimized cloud infrastructure by automating deployments on AWS using tools like Beanstalk,
+                CloudFormation & improving resource utilization. <br>
+                • Enhanced system reliability through continuous integration (CI) and automated testing pipelines,
+                reduced deployment errors by 87%.
               </p>
             </div>
-          </form>
+          </li>
+          <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail"> Jul 2023 - Dec 2023 </p>
+              <h3> AWS DevOps Engineer </h3>
+              <h4>Incloudo</h4>
+              <p>
+                • Collaborated with cross-functional teams to automate processes and streamline workflows by using
+                CI/CD tools like Jenkins, GitHub, Docker, K8s. <br>
+                • Implemented security enhancements for client's websites operating on Linux utilizing CLI, resulting
+                in an 82% increase in security posture. <br>
+                • Designed and implemented cloud solutions on AWS, leveraging services such as EC2, VPC, S3, ELB, EBS,
+                Cloudfront and WAF to optimize costs by 37%
+              </p>
+            </div>
+          </li>
+          <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail"> Aug 2023 - Sep 2023 </p>
+              <h3> CNCF Zero To Merge Mentee </h3>
+              <h4> Cloud Native Computing Foundation (CNCF) </h4>
+              <p>
+                • Communicated effectively with CNCF project maintainers to identify and address existing problems
+                <br>
+                • Collaborated on open GitHub issues and created impactful pull requests directly under Mr. Taylor
+                Dolezal (Head of ecosystem, CNCF) <br>
+                • Engaged as a CNCF Mentee in the first cohort program, contributing to the growth and development of
+                the Cloud Native Computing Foundation
+              </p>
+            </div>
+          </li>
+          <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail"> Jul 2023 - Aug 2023 </p>
+              <h3> IIRS-ISRO Trainee'23 </h3>
+              <h4> Indian Institute of Remote Sensing (IIRS), Indian Space Research Organization (ISRO) </h4>
+              <p>
+                • Conducted research and analysis on Earth and Near-Earth Space phenomena to support space mission
+                design and observations <br>
+                • Collaborated with teams to develop space instrumentation for technological advancements in accessing
+                space <br>
+                • Contributed to projects in Solar System Exploration, Astronomy, Astrophysics, and Cosmology to
+                broaden knowledge and skills.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail"> May 2023 - Aug 2023 </p>
+              <h3> Top 100 Contributor </h3>
+              <h4> GirlScript Summer of Code </h4>
+              <p>
+                • Ranked <strong>𝟔𝟗</strong> among the 1557 active contributors <br>
+                • <strong>𝟒𝟓</strong> prs got successfully merged <br>
+                • Communicated, connected & collaborated efficiently with like-minded individuals throughout the event
+                within and outside the community <br>
+                • Contributed to various open source projects and organizations in GitHub based on Python, machine
+                learning, web development and others
+              </p>
+            </div>
+          </li>
+          <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <p class="timeline-event-thumbnail"> Feb 2023 - Mar 2023 </p>
+              <h3> Top 20 Contributor </h3>
+              <h4> JGEC Winter of Code </h4>
+              <p>
+                • Secured <strong>𝟐𝟎th</strong> position out of 1500+ registered participants <br>
+                • Got started with open source with this as my first open-source program <br>
+                • Connected & communicated efficiently with a lot of mentees and mentors from different places within
+                the community <br>
+                • Contributed to various open-source projects and organizations in GitHub based on Python, machine
+                learning, web development and others
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- ./experience -->
 
-          <script>
+  <!-- projects -->
+  <div class="section" id="projects">
+    <div class="container">
+      <div class="col-md-12">
+        <h4>03</h4>
+        <h1 class="size-50">My Projects</h1>
+      </div>
+      <div class="main-container portfolio-inner clearfix">
+        <div class="portfolio-div">
+          <div class="portfolio">
+            <div class="categories-grid wow fadeInLeft">
+              <nav class="categories">
+                <ul class="portfolio_filter">
+                  <li><a href="" class="active" data-filter="*">All</a></li>
+                  <li><a href="" data-filter=".web-Dev">AWS DevOps</a></li>
+                  <li><a href="" data-filter=".Ml">ML</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+              <div class="col-md-4 col-sm-6 web-Dev">
+                <a id="demo01" href="resume.viveksati.online" target="_blank" class="portfolio_item">
+                  <img src="img/portfolio/resume-ss.png" alt="image" class="img-responsive" />
+                  <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                      <div class="item_info">
+                        <span>Cloud Resume Challenge</span>
+                        <em>AWS | GitHub Actions | Web Dev | DNS</em>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <p>
+                  • Deployed resume on AWS S3 and distributed on Cloudfront with a custom domain with SSL Certificate
+                  for HTTPS <br>
+                  • Integrated a serverless visitor counter using AWS Lambda, API Gateway and DynamoDB <br>
+                  • Set up CI/CD pipeline using GitHub Actions for continuous updates
+                </p>
+              </div>
+              <!-- end single work -->
+
+
+              <!-- single work -->
+              <div class="col-md-4 col-sm-6 Ml">
+                <a id="demo02" href="https://github.com/Viveksati5143/Sentimental-Analysis" target="_blank"
+                  class="portfolio_item">
+                  <img src="img/portfolio/sentiments.png" alt="image" class="img-responsive" />
+                  <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                      <div class="item_info">
+                        <span> Sentimental Analysis </span>
+                        <em> Python | ML | NLP | Jupyter-Notebook </em>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <p>
+                  • Developed an ML project for recognizing sentiments using Logistic Regression with 93% accuracy
+                  <br>
+                  • Utilized Python libraries used such as NumPy, Pandas, scikit-learn, matplotlib and NLTK
+                </p>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work -->
+              <div class="col-md-4 col-sm-6 web-Dev">
+                <a id="demo03" href="https://github.com/Viveksati5143/Jenkins" target="_blank" class="portfolio_item">
+                  <img src="img/portfolio/pipeline.png" alt="image" class="img-responsive" />
+                  <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                      <div class="item_info">
+                        <span>Pipeline as a Code</span>
+                        <em>Jenkins | Tomcat | Slack | Yaml </em>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <p>
+                  • Created a Jenkins pipeline to automate the deployment of a Java web application on Tomcat server
+                  <br>
+                  • Integrated Slack notifications for build status and failure alerts <br>
+                  • Configured the pipeline using Jenkinsfile and Yaml
+                </p>
+              </div>
+              <!-- end single work -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./projects -->
+
+  <!-- contact -->
+  <div class="section" id="contact">
+    <div class="container">
+      <div class="col-md-12">
+        <h4>04</h4>
+        <h1 class="size-50">Contact Me</h1>
+        <div class="h-50"></div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <h3>Email</h3>
+        <a href="mailto:viveksati001@gmail.com">viveksati001@gmail.com</a>
+        <h3>Social Network</h3>
+        <ul class="social">
+          <li>
+            <a href="https://www.linkedin.com/in/vivek-sati/" target="_blank"><i class="ion-social-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/Vivek__twts" target="_blank"><i class="ion-social-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Viveksati5143" target="_blank"><i class="ion-social-github"
+                id="github-icon-footer"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_the_pahadi_soul_/" target="_blank"><i
+                class="ion-social-instagram"></i></a>
+          </li>
+        </ul>
+        <br><br>
+        <h3>All My Links:</h3>
+        <ul class="social">
+          <li><a href="https://linktr.ee/Viveksati" target="_blank">Linktree<i class="ion-link"></i></a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="h-50"></div>
+      </div>
+      <div class="col-md-8" data-aos="fade-up">
+        <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+          <input type="email" name="email" class="form-control" placeholder="Your E-mail" required />
+          <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
+          <textarea name="message" class="form-control" placeholder="Your Message" style="height: 120px"
+            required></textarea>
+          <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
+          <div id="success">
+            <p class="green textcenter">Your message was sent successfully! I will be in touch as soon as I can.</p>
+          </div>
+          <div id="error">
+            <p>Something went wrong, try refreshing and submitting the form again.</p>
+          </div>
+        </form>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
             const form = document.getElementById("contact-form");
             form.addEventListener("submit", formSubmit);
 
             function formSubmit(e) {
               e.preventDefault();
               const formData = new FormData(e.target);
-
-              console.log(formData);
 
               // Check if required fields are empty
               const name = formData.get('name');
@@ -661,7 +565,6 @@
                 },
               })
                 .then(response => {
-                  console.log(response)
                   $('#contact :input').attr('disabled', 'disabled');
                   $('#contact').fadeTo("slow", 1, function () {
                     $(this).find(':input').attr('disabled', 'disabled');
@@ -670,29 +573,46 @@
                   });
                 })
                 .catch(error => {
-                  console.log(error)
                   $('#contact').fadeTo("slow", 1, function () {
                     $('#error').fadeIn();
                   });
-                })
+                });
             }
-          </script>
-        </div>
+
+            const toggleSwitch = document.getElementById('dark-mode-switch');
+
+            const setDarkMode = (isDark) => {
+              document.body.classList.toggle('dark-mode', isDark);
+              toggleSwitch.classList.toggle('fa-moon', !isDark);
+              toggleSwitch.classList.toggle('fa-sun', isDark);
+              localStorage.setItem('dark-mode', isDark);
+            };
+
+            toggleSwitch.addEventListener('click', () => {
+              const isDark = !document.body.classList.contains('dark-mode');
+              setDarkMode(isDark);
+            });
+
+            // Load dark mode preference
+            const isDarkMode = localStorage.getItem('dark-mode') === 'true';
+            setDarkMode(isDarkMode);
+          });
+        </script>
       </div>
     </div>
-    <!-- ./contact -->
+  </div>
+  <!-- ./contact -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!--  plugins  -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-
-    <!--  main script  -->
-    <script src="js/custom.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- plugins -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <!-- main script -->
+  <script src="js/custom.js"></script>
 </body>
 
 </html>

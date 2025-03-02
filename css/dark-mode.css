@@ -1,0 +1,33 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode .navbar-fixed-top {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .section {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .portfolio_item_hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .timeline-event-copy {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .contact-bg {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .btn {
+    background-color: #bb86fc;
+    color: #121212;
+}
