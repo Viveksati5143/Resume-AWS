@@ -257,7 +257,7 @@ nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #444;
-    font-size: 16px;
+    font-size: 14px;
     /* Increased font size for desktop */
     font-weight: bold;
 }
@@ -833,7 +833,7 @@ fieldset {
     }
 
     nav li a {
-        font-size: 12px;
+        font-size: 8px;
         /* Increased font size for mobile */
     }
 
