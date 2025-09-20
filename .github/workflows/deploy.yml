@@ -29,7 +29,7 @@ jobs:
       # Syncs all files in the repo to the S3 bucket and removes any files not in the repo
 
     # Invalidate the CloudFront cache
-    - name: Invalidate CloudFront Cache
-      run: |
-        aws cloudfront create-invalidation --distribution-id E2DAJWU03C66ZB --paths "/*"
-        # Replace YOUR_CLOUDFRONT_DIST_ID with your CloudFront distribution ID
+    # - name: Invalidate CloudFront Cache
+    #   run: |
+    #     aws cloudfront create-invalidation --distribution-id E2DAJWU03C66ZB --paths "/*"
+    #     # Replace YOUR_CLOUDFRONT_DIST_ID with your CloudFront distribution ID
