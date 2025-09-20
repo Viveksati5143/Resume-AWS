@@ -25,7 +25,7 @@ jobs:
     # Sync the website files to the S3 bucket
     - name: Sync website files to S3
       run: |
-        aws s3 sync ./ s3://vivek-resume-bucket-9 --exclude ".git/*" --exclude ".github/*" --delete
+        aws s3 sync ./ s3://vivekawsresumebucket --exclude ".git/*" --exclude ".github/*" --delete
       # Syncs all files in the repo to the S3 bucket and removes any files not in the repo
 
     # Invalidate the CloudFront cache
