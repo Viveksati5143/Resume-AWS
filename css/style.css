@@ -774,9 +774,8 @@ fieldset {
     margin-top: 25px;
     width: 140px;
     height: 40px;
+    line-height: 40px; /* centers text vertically */
     border-radius: 5px;
-    padding-top: 6px;
-    padding-bottom: 30px;
     text-align: center;
     font-weight: 500;
     background: transparent;
@@ -786,6 +785,8 @@ fieldset {
     display: inline-block;
     border: 1px solid black;
     outline: none;
+    color: black;          /* default text color */
+    text-decoration: none; /* remove underline */
 }
 
 
@@ -893,7 +894,7 @@ fieldset {
     color: #fff;
 }
 
-.resumediv:hover a {
+.resumediv:hover {
     color: #fff;
 }
 
